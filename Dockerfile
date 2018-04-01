@@ -5,8 +5,8 @@ MAINTAINER Vitesh Radhakisson (vradhakisson@productiveedge.com)
 ENV magnoliaHome /opt/magnolia
 RUN mkdir -p $magnoliaHome/instance
 
-WORKDIR $CATALINA_HOME
-CMD ["catalina.sh", "stop"]
+#WORKDIR $CATALINA_HOME
+#CMD ["catalina.sh", "stop"]
 
 WORKDIR /etc/systemd/system
 RUN echo "# Systemd unit file for tomcat" >> tomcat.service
