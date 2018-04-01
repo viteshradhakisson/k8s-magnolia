@@ -32,4 +32,4 @@ RUN echo "Restart=always" >> tomcat.service
 RUN echo "[Install]" >> tomcat.service
 RUN echo "WantedBy=multi-user.target" >> tomcat.service
 
-RUN systemctl start tomcat.service
+#RUN systemctl start tomcat.service
